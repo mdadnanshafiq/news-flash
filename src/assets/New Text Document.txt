@@ -1,0 +1,15 @@
+Git Ignore Firebase Config
+Hello folks,
+
+I have a "firebase" folder in the "src" folder of my React app. I would like to ignore the "firebase_config.js" file or the whole "firebase" folder, but no matter what I put in the .gitignore file, VS Code is recognizing changes.
+
+
+If you're already tracking those files, then you have to:
+
+git rm --cached -r .
+
+Update .gitignore (in your case just firebase/ will suffice), then:
+
+git add .
+
+git commit -m "Updated .gitignore"
