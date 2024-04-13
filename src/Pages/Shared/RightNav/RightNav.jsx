@@ -1,18 +1,18 @@
 import { CiInstagram } from "react-icons/ci";
-import { FaFacebookF, FaGithub, FaGoogle, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 
 const RightNav = () => {
   return (
     <div className="*:mb-4">
       <div className="p-4 flex justify-center flex-col items-start gap-2">
         <h2 className="font-bold text-xl ">Login With</h2>
-        <button className="btn w-full btn-outline text-blue-500">
+        <button className="btn w-full btn-outline text-red-500">
           <FaGoogle />
           Login With Google
         </button>
-        <button className="btn btn-outline w-full">
-          <FaGithub />
-          Login With Github
+        <button className="btn btn-outline w-full text-blue-500">
+          <FaFacebook />
+          Login With Facebook
         </button>
       </div>
       <div className="p-4 flex justify-center flex-col items-start">

@@ -5,6 +5,7 @@ import Nav from "../Shared/Nav/Nav";
 import RightNav from "../Shared/RightNav/RightNav";
 import Latest from "./Latest";
 import NewsCard from "../../components/NewsCard/NewsCard";
+import Footer from "../Shared/Footer/Footer";
 
 const Home = () => {
   const [news, setNews] = useState([]);
@@ -35,6 +36,7 @@ const Home = () => {
           <RightNav></RightNav>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
