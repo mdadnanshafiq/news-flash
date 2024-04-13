@@ -15,7 +15,7 @@ const NewsDetail = () => {
     <div>
       <Header></Header>
       <Nav></Nav>
-      <div className="grid lg:grid-cols-3">
+      <div className="grid grid-cols-1 lg:grid-cols-3 items-center mx-auto justify-center">
         <div className="col-span-2">
           <div className="card rounded-none bg-base-100 border">
             <div className="bg-gray-200 ">
@@ -92,7 +92,9 @@ const NewsDetail = () => {
             </div>
           </div>
         </div>
-        <RightNav className="col-span-1"></RightNav>
+        <div className="w-full mx-auto col-span-1">
+          <RightNav></RightNav>
+        </div>
       </div>
       <Footer></Footer>
     </div>

@@ -20,11 +20,11 @@ const Home = () => {
       <Latest></Latest>
       <Nav></Nav>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-4 justify-center  gap-4">
         <div>
           <LeftNav></LeftNav>
         </div>
-        <div className="col-span-2">
+        <div className="lg:col-span-2">
           <h1 className="font-bold text-xl mb-6">All News</h1>
           <div className="flex flex-col gap-4">
             {news.map((item, idx) => (
@@ -32,8 +32,8 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div>
-          <RightNav></RightNav>
+        <div className="">
+          <RightNav className=""></RightNav>
         </div>
       </div>
       <Footer></Footer>

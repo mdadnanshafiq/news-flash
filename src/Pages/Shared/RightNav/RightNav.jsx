@@ -3,7 +3,7 @@ import { FaFacebook, FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 
 const RightNav = () => {
   return (
-    <div className="*:mb-4">
+    <div className="*:mb-4 w-full justify-center items-center mx-auto">
       <div className="p-4 flex justify-center flex-col items-start gap-2">
         <h2 className="font-bold text-xl ">Login With</h2>
         <button className="btn w-full btn-outline text-red-500">
