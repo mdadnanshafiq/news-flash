@@ -32,7 +32,9 @@ const NewsCard = ({ news }) => {
         </figure>
         <div className="card-body items-left text-left">
           <p>{news.details.slice(0, 250)}...</p>
-          <Link className="font-bold text-orange-500">Read More</Link>
+          <Link to={`/news/${news._id}`} className="font-bold text-orange-500">
+            Read More
+          </Link>
           <hr className="w-full"></hr>
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center gap-2">
@@ -61,7 +63,6 @@ const NewsCard = ({ news }) => {
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-orange-400"
-                  checked
                 />
               </div>
               <span className="font-bold text-gray-500">
